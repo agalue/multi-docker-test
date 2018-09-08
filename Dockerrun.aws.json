@@ -5,25 +5,29 @@
       "name": "client",
       "image": "agalue/poc-multi-client",
       "hostname": "client",
-      "essential": false
+      "essential": false,
+      "memory": 128
     },
     {
       "name": "server",
       "image": "agalue/poc-multi-server",
       "hostname": "api",
-      "essential": false
+      "essential": false,
+      "memory": 128
     },
     {
       "name": "worker",
       "image": "agalue/poc-multi-worker",
       "hostname": "worker",
-      "essential": false
+      "essential": false,
+      "memory": 128
     },
     {
       "name": "nginx",
       "image": "agalue/poc-multi-nginx",
       "hostname": "proxy",
       "essential": true,
+      "memory": 128,
       "portMappings": [
         {
           "hostPort": 80,
