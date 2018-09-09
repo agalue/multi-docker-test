@@ -16,7 +16,7 @@ class Fib extends Component {
   async fetchValues() {
     try {
       const { data } = await axios.get('/api/values/current');
-      this.setState({ values: data ? data: {} });  
+      if (data) this.setState({ values: data });  
     } catch (error) {
       console.error(error);
     }
@@ -25,7 +25,7 @@ class Fib extends Component {
   async fetchIndexes() {
     try {
       const { data } = await axios.get('/api/values/all');
-      this.setState({ seenIndexes: data ? data: [] });  
+      if (data) this.setState({ seenIndexes: data });  
     } catch (error) {
       console.error(error);
     }

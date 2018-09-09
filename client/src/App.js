@@ -13,7 +13,6 @@ class App extends Component {
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
             <h1 className="App-title">Fibonacci Calculator</h1>
-            <h3>created by Alejandro Galue</h3>
             <Link className="App-link" to="/">Home</Link>
             &nbsp;|&nbsp;
             <Link className="App-link" to="/otherpage">Other Page</Link>
